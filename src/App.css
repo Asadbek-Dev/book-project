@@ -14,3 +14,37 @@ header h1{
   margin-left: 15px;
   font-weight: 300;
 }
+input:focus, 
+select:focus
+{
+    outline: none;
+}
+
+.input {
+    width: 100px;
+    padding: 20px 0 20px 0;
+    margin: 0 auto;
+}
+
+.search-area form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0px 20px 140px;
+}
+
+.search-area button {
+    display: inline;
+    background: #343a40;
+    color: #fff;
+    border: none;
+    padding: 8px 13px 10px 13px;
+    margin: 0 15px 0 0;
+    position: relative;
+    top: -2px;
+}
+
+input {
+    width: 150px;
+    padding: 5px;
+    font-size: 1em;
+}
