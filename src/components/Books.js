@@ -8,7 +8,8 @@ export default class Books extends Component {
         super(props);
         this.state={
             books:[],
-            searchField:''
+            searchField:'',
+            sort:''
         }
     }
 
@@ -25,10 +26,14 @@ export default class Books extends Component {
     handleSearch = (e) => {
         this.setState({searchField:e.target.value})
     }
+    handleSort=(e)=>{
+        console.log(e.target.value);
+        this.setState=({sort:e.target.value})
+    }
     render() {
         return (
             <div>
-                <SearchArea searchBook={this.searchBook} handleSearch={this.handleSearch} />
+                <SearchArea searchBook={this.searchBook} handleSort={this.handleSort} handleSearch={this.handleSearch} />
                 <BookList books={this.state.books}/>
             </div>
         )
